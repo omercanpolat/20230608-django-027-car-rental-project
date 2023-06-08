@@ -1,6 +1,4 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
-# from django.http import JsonResponse
-# from django.views.decorators.csrf import csrf_exempt
 from rest_framework.response import Response
 from .models import Car, Customer, Reservation
 from .serializers import CarSerializer, CustomerSerializer, ReservationSerializer
@@ -126,6 +124,8 @@ def reservation_detail(request, pk):
 
 
 
+# from django.http import JsonResponse
+# from django.views.decorators.csrf import csrf_exempt
 
 # @csrf_exempt
 # def car_list(request):
